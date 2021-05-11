@@ -7,20 +7,20 @@
 #include <NTPClient.h>
 #include <WiFiUdp.h>
 
-const char *ssid = "INFINITUMAD9E";
-const char *password = "a39fs6wG22";
+const char *ssid = "xxx";
+const char *password = "***";
 
 String fileName = "";
 
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, "mx.pool.ntp.org", -18000);
 
-String host = "https://192.168.1.238/API/api.php";
+String host = "https://0.0.0.0/API/api.php";
 String auth = base64::encode("admin:12345");
 
 char ftp_server[] = "files.000webhost.com";
-char ftp_user[] = "glabsolutions";
-char ftp_pass[] = "(RUqG=[/Na*j}6]c";
+char ftp_user[] = "xxx";
+char ftp_pass[] = "***";
 
 ESP32_FTPClient ftp(ftp_server, ftp_user, ftp_pass, 5000, 2);
 
